@@ -13,8 +13,16 @@ map(words, function(word) {
 });
 
 function map(words, callBack) {
-  newArray = [];
-  for (i = 0; i < words.length; i++) {
+  var newArray = [];
+  for (var i = 0; i < words.length; i++) {
     newArray.push(callBack(words[i]));
   } return newArray;
 }
+
+
+//same as above using map method
+// function map(words, callBack) {
+//   return words.map(function(arr) {
+//     return callBack(arr)
+//   })
+// }
